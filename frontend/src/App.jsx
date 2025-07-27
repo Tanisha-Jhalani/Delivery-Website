@@ -8,6 +8,8 @@ import Home from './pages/Home/Home'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
+import { ToastContainer , toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [showLogin , setShowLogin] = useState(false)
@@ -25,6 +27,7 @@ const App = () => {
        </Routes>
     </div>
     <Footer/>
+     <ToastContainer position="top-center" autoClose={2000} />
       </>
   )
 }
